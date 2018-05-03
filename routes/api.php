@@ -21,4 +21,7 @@ $api->version('v1', [
 	// 短信验证码
 	$api->post('verificationCodes', 'verificationCodesController@store')
 		->name('api.verificationCodes.store');
+	// 用户注册
+	$api->post('users', 'usersController@store')
+		->name('api.users.store');
 });
