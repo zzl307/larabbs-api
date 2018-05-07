@@ -109,6 +109,7 @@ class ComposerStaticInit11adc0823cc6d563f6177f0560227204
         ),
         'L' => 
         array (
+            'Liyu\\Dingo\\' => 11,
             'League\\OAuth1\\' => 14,
             'League\\Fractal\\' => 15,
             'League\\Flysystem\\' => 17,
@@ -343,6 +344,10 @@ class ComposerStaticInit11adc0823cc6d563f6177f0560227204
         array (
             0 => __DIR__ . '/..' . '/mews/captcha/src',
         ),
+        'Liyu\\Dingo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/liyu/dingo-serializer-switch/src',
+        ),
         'League\\OAuth1\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/oauth1-client/src',
@@ -528,6 +533,7 @@ class ComposerStaticInit11adc0823cc6d563f6177f0560227204
 
     public static $classMap = array (
         'App\\Console\\Commands\\CalculateActiveUser' => __DIR__ . '/../..' . '/app/Console/Commands/CalculateActiveUser.php',
+        'App\\Console\\Commands\\GenerateToken' => __DIR__ . '/../..' . '/app/Console/Commands/GenerateToken.php',
         'App\\Console\\Commands\\SyncUserActivedAt' => __DIR__ . '/../..' . '/app/Console/Commands/SyncUserActivedAt.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
@@ -555,6 +561,7 @@ class ComposerStaticInit11adc0823cc6d563f6177f0560227204
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Requests\\Api\\AuthorizationRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/AuthorizationRequest.php',
         'App\\Http\\Requests\\Api\\CaptchaRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/CaptchaRequest.php',
         'App\\Http\\Requests\\Api\\SocialAuthorizationRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/SocialAuthorizationRequest.php',
         'App\\Http\\Requests\\Api\\UserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/UserRequest.php',
@@ -586,6 +593,7 @@ class ComposerStaticInit11adc0823cc6d563f6177f0560227204
         'App\\Providers\\EasySmsServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EasySmsServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Transformers\\UserTransformer' => __DIR__ . '/../..' . '/app/Transformers/UserTransformer.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
         'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
         'Barryvdh\\Debugbar\\Console\\ClearCommand' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Console/ClearCommand.php',
@@ -3129,6 +3137,10 @@ class ComposerStaticInit11adc0823cc6d563f6177f0560227204
         'League\\OAuth1\\Client\\Signature\\Signature' => __DIR__ . '/..' . '/league/oauth1-client/src/Client/Signature/Signature.php',
         'League\\OAuth1\\Client\\Signature\\SignatureInterface' => __DIR__ . '/..' . '/league/oauth1-client/src/Client/Signature/SignatureInterface.php',
         'LinksTableSeeder' => __DIR__ . '/../..' . '/database/seeds/LinksTableSeeder.php',
+        'Liyu\\Dingo\\SerializerSwitch' => __DIR__ . '/..' . '/liyu/dingo-serializer-switch/src/SerializerSwitch.php',
+        'Liyu\\Dingo\\Serializers\\ArraySerializer' => __DIR__ . '/..' . '/liyu/dingo-serializer-switch/src/Serializers/ArraySerializer.php',
+        'Liyu\\Dingo\\Serializers\\DataArraySerializer' => __DIR__ . '/..' . '/liyu/dingo-serializer-switch/src/Serializers/DataArraySerializer.php',
+        'Liyu\\Dingo\\ServiceProvider' => __DIR__ . '/..' . '/liyu/dingo-serializer-switch/src/ServiceProvider.php',
         'Mews\\Captcha\\Captcha' => __DIR__ . '/..' . '/mews/captcha/src/Captcha.php',
         'Mews\\Captcha\\CaptchaController' => __DIR__ . '/..' . '/mews/captcha/src/CaptchaController.php',
         'Mews\\Captcha\\CaptchaServiceProvider' => __DIR__ . '/..' . '/mews/captcha/src/CaptchaServiceProvider.php',
