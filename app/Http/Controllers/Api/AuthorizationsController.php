@@ -27,9 +27,6 @@ class AuthorizationsController extends Controller
                     $driver->setOpenId($request->openid);
                 }
             }
-
-			var_dump($driver->userFromToken($token));
-            exit();
             
             $oauthUser = $driver->userFromToken($token);
 
