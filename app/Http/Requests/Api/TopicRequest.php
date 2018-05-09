@@ -4,7 +4,7 @@ namespace App\Http\Requests\Api;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class TopiceRequest extends FormRequest
+class TopicRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,11 +23,22 @@ class TopiceRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            'title' => 'required|string',
-            'body' => 'required|string',
-            'category_id' => 'required|exists:categories,id',
-        ];
+        switch($this->method()) {
+        case 'POST':
+            return [
+                'title' => 'required|string',
+                'body' => 'required|string',
+                'category_id' => 'required|exists:categories,id',
+            ];
+            break;
+        case 'PATCH':
+            return [
+                'title' => 'string',
+                'body' => 'string',
+                'category_id' => 'exists:categories,id',
+            ];
+            break;
+    }
     }
 
     public function attributes()
