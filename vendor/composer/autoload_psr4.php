@@ -43,6 +43,7 @@ return array(
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'Predis\\' => array($vendorDir . '/predis/predis/src'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
+    'Overtrue\\LaravelQueryLogger\\' => array($vendorDir . '/overtrue/laravel-query-logger/src'),
     'Overtrue\\LaravelLang\\' => array($vendorDir . '/overtrue/laravel-lang/src'),
     'Overtrue\\EasySms\\' => array($vendorDir . '/overtrue/easy-sms/src'),
     'Namshi\\JOSE\\' => array($vendorDir . '/namshi/jose/src/Namshi/JOSE'),

@@ -7036,5 +7036,56 @@
             }
         ],
         "description": "A middleware to switch dingo serializer"
+    },
+    {
+        "name": "overtrue/laravel-query-logger",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/overtrue/laravel-query-logger.git",
+            "reference": "af7269a410ebc568bfd88fe807c062bb0f06c737"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/overtrue/laravel-query-logger/zipball/af7269a410ebc568bfd88fe807c062bb0f06c737",
+            "reference": "af7269a410ebc568bfd88fe807c062bb0f06c737",
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
+        },
+        "require": {
+            "laravel/framework": "5.*"
+        },
+        "time": "2017-10-11T10:02:01+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Overtrue\\LaravelQueryLogger\\ServiceProvider"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Overtrue\\LaravelQueryLogger\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "overtrue",
+                "email": "anzhengchao@gmail.com"
+            }
+        ],
+        "description": "A dev tool to log all queries for laravel application."
     }
 ]
