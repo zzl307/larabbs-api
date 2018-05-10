@@ -117,6 +117,10 @@ class ComposerStaticInit11adc0823cc6d563f6177f0560227204
             'Laravel\\Tinker\\' => 15,
             'Laravel\\Socialite\\' => 18,
         ),
+        'J' => 
+        array (
+            'JPush\\' => 6,
+        ),
         'I' => 
         array (
             'Intervention\\Image\\' => 19,
@@ -373,6 +377,10 @@ class ComposerStaticInit11adc0823cc6d563f6177f0560227204
         array (
             0 => __DIR__ . '/..' . '/laravel/socialite/src',
         ),
+        'JPush\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jpush/jpush/src/JPush',
+        ),
         'Intervention\\Image\\' => 
         array (
             0 => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image',
@@ -548,6 +556,10 @@ class ComposerStaticInit11adc0823cc6d563f6177f0560227204
         'App\\Http\\Controllers\\Api\\CategoriesController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/CategoriesController.php',
         'App\\Http\\Controllers\\Api\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/Controller.php',
         'App\\Http\\Controllers\\Api\\ImagesController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/ImagesController.php',
+        'App\\Http\\Controllers\\Api\\LinksController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/LinksController.php',
+        'App\\Http\\Controllers\\Api\\NotificationsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/NotificationsController.php',
+        'App\\Http\\Controllers\\Api\\PermissionsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/PermissionsController.php',
+        'App\\Http\\Controllers\\Api\\RepliesController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/RepliesController.php',
         'App\\Http\\Controllers\\Api\\TopicsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/TopicsController.php',
         'App\\Http\\Controllers\\Api\\UsersController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/UsersController.php',
         'App\\Http\\Controllers\\Api\\VerificationCodesController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/VerificationCodesController.php',
@@ -571,7 +583,9 @@ class ComposerStaticInit11adc0823cc6d563f6177f0560227204
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Requests\\Api\\AuthorizationRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/AuthorizationRequest.php',
         'App\\Http\\Requests\\Api\\CaptchaRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/CaptchaRequest.php',
+        'App\\Http\\Requests\\Api\\FormRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/FormRequest.php',
         'App\\Http\\Requests\\Api\\ImageRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/ImageRequest.php',
+        'App\\Http\\Requests\\Api\\ReplyRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/ReplyRequest.php',
         'App\\Http\\Requests\\Api\\SocialAuthorizationRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/SocialAuthorizationRequest.php',
         'App\\Http\\Requests\\Api\\TopicRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/TopicRequest.php',
         'App\\Http\\Requests\\Api\\UserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/UserRequest.php',
@@ -606,6 +620,11 @@ class ComposerStaticInit11adc0823cc6d563f6177f0560227204
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Transformers\\CategoryTransformer' => __DIR__ . '/../..' . '/app/Transformers/CategoryTransformer.php',
         'App\\Transformers\\ImageTransformer' => __DIR__ . '/../..' . '/app/Transformers/ImageTransformer.php',
+        'App\\Transformers\\LinkTransformer' => __DIR__ . '/../..' . '/app/Transformers/LinkTransformer.php',
+        'App\\Transformers\\NotificationTransformer' => __DIR__ . '/../..' . '/app/Transformers/NotificationTransformer.php',
+        'App\\Transformers\\PermissionTransformer' => __DIR__ . '/../..' . '/app/Transformers/PermissionTransformer.php',
+        'App\\Transformers\\ReplyTransformer' => __DIR__ . '/../..' . '/app/Transformers/ReplyTransformer.php',
+        'App\\Transformers\\RoleTransformer' => __DIR__ . '/../..' . '/app/Transformers/RoleTransformer.php',
         'App\\Transformers\\TopicTransformer' => __DIR__ . '/../..' . '/app/Transformers/TopicTransformer.php',
         'App\\Transformers\\UserTransformer' => __DIR__ . '/../..' . '/app/Transformers/UserTransformer.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
@@ -3032,6 +3051,18 @@ class ComposerStaticInit11adc0823cc6d563f6177f0560227204
         'Intervention\\Image\\Point' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Point.php',
         'Intervention\\Image\\Response' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Response.php',
         'Intervention\\Image\\Size' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Size.php',
+        'JPush\\AdminClient' => __DIR__ . '/..' . '/jpush/jpush/src/JPush/AdminClient.php',
+        'JPush\\Client' => __DIR__ . '/..' . '/jpush/jpush/src/JPush/Client.php',
+        'JPush\\Config' => __DIR__ . '/..' . '/jpush/jpush/src/JPush/Config.php',
+        'JPush\\DevicePayload' => __DIR__ . '/..' . '/jpush/jpush/src/JPush/DevicePayload.php',
+        'JPush\\Exceptions\\APIConnectionException' => __DIR__ . '/..' . '/jpush/jpush/src/JPush/Exceptions/APIConnectionException.php',
+        'JPush\\Exceptions\\APIRequestException' => __DIR__ . '/..' . '/jpush/jpush/src/JPush/Exceptions/APIRequestException.php',
+        'JPush\\Exceptions\\JPushException' => __DIR__ . '/..' . '/jpush/jpush/src/JPush/Exceptions/JPushException.php',
+        'JPush\\Exceptions\\ServiceNotAvaliable' => __DIR__ . '/..' . '/jpush/jpush/src/JPush/Exceptions/ServiceNotAvaliable.php',
+        'JPush\\Http' => __DIR__ . '/..' . '/jpush/jpush/src/JPush/Http.php',
+        'JPush\\PushPayload' => __DIR__ . '/..' . '/jpush/jpush/src/JPush/PushPayload.php',
+        'JPush\\ReportPayload' => __DIR__ . '/..' . '/jpush/jpush/src/JPush/ReportPayload.php',
+        'JPush\\SchedulePayload' => __DIR__ . '/..' . '/jpush/jpush/src/JPush/SchedulePayload.php',
         'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/ConsoleColor.php',
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/JakubOnderka/PhpConsoleHighlighter/Highlighter.php',
