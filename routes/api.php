@@ -45,6 +45,9 @@ $api->version('v1', [
         // 登录
         $api->post('authorizations', 'AuthorizationsController@store')
     		->name('api.authorizations.store');
+        // 小程序登录
+        $api->post('weapp/authorizations', 'AuthorizationsController@weappStore')
+            ->name('api.weapp.authorizations.store');
 	});
 	$api->group([
         'middleware' => 'api.throttle',
