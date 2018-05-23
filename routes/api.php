@@ -42,6 +42,9 @@ $api->version('v1', [
 		// 删除token
 		$api->delete('authorizations/current', 'AuthorizationsController@destroy')
 		    ->name('api.authorizations.destroy');
+        // 用户详情
+        $api->get('users/{user}', 'UsersController@show')
+            ->name('api.users.show');
         // 登录
         $api->post('authorizations', 'AuthorizationsController@store')
     		->name('api.authorizations.store');
@@ -102,7 +105,7 @@ $api->version('v1', [
             // 发布回复
             $api->post('topics/{topic}/replies', 'RepliesController@store')
                 ->name('api.topics.replies.store');
-            // 删除回复\
+            // 删除回复
             $api->delete('topics/{topic}/replies/{reply}', 'RepliesController@destroy')
                 ->name('api.topics.replies.destroy');
             // 通知列表
