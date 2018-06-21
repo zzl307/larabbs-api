@@ -117,9 +117,12 @@ class UsersController extends Controller
             ])
             ->setStatusCode(201);
     }
+<<<<<<< HEAD
+=======
 
     public function show(User $user)
     {
         return $this->response->item($user, new UserTransformer());
     }
+>>>>>>> 5947b16ef44e42f2f0a05f2cd772d68eef8306b7
 }
