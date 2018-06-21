@@ -42,6 +42,9 @@ $api->version('v1', [
 		// 删除token
 		$api->delete('authorizations/current', 'AuthorizationsController@destroy')
 		    ->name('api.authorizations.destroy');
+        // 用户详情
+        $api->get('users/{user}', 'UsersController@show')
+            ->name('api.users.show');
         // 登录
         $api->post('authorizations', 'AuthorizationsController@store')
     		->name('api.authorizations.store');
@@ -86,7 +89,9 @@ $api->version('v1', [
                 ->name('api.user.show');
             // 编辑登录用户信息
             $api->patch('user', 'UsersController@update')
-                ->name('api.user.update');
+                ->name('api.user.patch');
+            $api->put('user', 'UsersController@update')
+            ->name('api.user.update');
             // 图片资源
             $api->post('images', 'ImagesController@store')
                 ->name('api.images.store');
@@ -100,7 +105,7 @@ $api->version('v1', [
             // 发布回复
             $api->post('topics/{topic}/replies', 'RepliesController@store')
                 ->name('api.topics.replies.store');
-            // 删除回复\
+            // 删除回复
             $api->delete('topics/{topic}/replies/{reply}', 'RepliesController@destroy')
                 ->name('api.topics.replies.destroy');
             // 通知列表
@@ -112,6 +117,8 @@ $api->version('v1', [
             // 标记消息通知为已读
             $api->patch('user/read/notifications', 'NotificationsController@read')
                 ->name('api.user.notifications.read');
+            $api->put('user/read/notifications', 'NotificationsController@read')
+                ->name('api.user.notifications.read.put');
             // 当前登录用户权限
             $api->get('user/permissions', 'PermissionsController@index')
                 ->name('api.user.permissions.index');
