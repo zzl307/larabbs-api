@@ -26,7 +26,7 @@ class VerificationCodesController extends Controller
 
     	// 判断真实环境还是本地环境
     	if (!app()->environment('production')) {
-    		$code = '28075477z';
+    		$code = '0301';
     	} else {
     		// 生成4位随机数，左侧补0
 	        $code = str_pad(random_int(1, 9999), 4, 0, STR_PAD_LEFT);
