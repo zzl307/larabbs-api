@@ -14,11 +14,21 @@ class UsersController extends Controller
         $this->middleware('auth', ['except' => ['show']]);
     }
 
+    /**
+     * [show description]
+     * @param  User   $user [description]
+     * @return [type]       [description]
+     */
     public function show(User $user)
     {
         return view('users.show', compact('user'));
     }
 
+    /**
+     * [edit description]
+     * @param  User   $user [description]
+     * @return [type]       [description]
+     */
     public function edit(User $user)
     {
         $this->authorize('update', $user);
@@ -26,6 +36,14 @@ class UsersController extends Controller
         return view('users.edit', compact('user'));
     }
 
+    /**
+     * [update description]
+     * @param  UserRequest        $request  [description]
+     * @param  ImageUploadHandler $uploader [description]
+     * @param  User               $user     [description]
+     * @return [type]                       [description]
+     * 
+     */
     public function update(UserRequest $request, ImageUploadHandler $uploader, User $user)
     {
         $this->authorize('update', $user);
