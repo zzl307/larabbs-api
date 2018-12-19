@@ -1,7 +1,7 @@
 language: php
 
 php: 
-	- 7.1
+	- 7.2.13
 
 service: 
 	- mysql
@@ -13,7 +13,7 @@ before_script:
 	- php artisan jwt:secret
 	- php artisan key:generate
 	- php artisan vendor:publish --all
-	- mysql -e 'CREATE DATABASE IF NOT EXISTS jokes ;'
+	- mysql -e 'CREATE DATABASE IF NOT EXISTS jokes;'
 	- php artisan migrate
 	- php artisan rsa:generate
 
